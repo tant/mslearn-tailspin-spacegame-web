@@ -7,7 +7,7 @@ trigger:
 - '*''
 
 pool:
-  vmImage: 'ubuntu-16.04'
+  vmImage: 'ubuntu-latest'
   demands:
   - npm
 
@@ -48,4 +48,3 @@ steps:
     command: 'build'
     arguments: '--no-restore --configuration Release'
     projects: '**/*.csproj'
-    
